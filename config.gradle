@@ -1,0 +1,106 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+//            buildToolsVersion: '27.0.2',
+            applicationId    : "text.qiao.com.rerfitrxjavastudy",
+            minSdkVersion    : 16,
+            targetSdkVersion : 23,
+            versionCode      : 101,
+            versionName      : "1.0.1"
+    ]
+
+    def dependVersion = [
+            support        : "27.1.1",
+            retrofit       : "2.3.0",
+            okhttp         : "3.8.0",
+            dagger2        : "2.17",
+            glide          : "4.6.1",
+            agentweb       : "4.0.2",
+            springview     : "1.5.0",
+            butterknife    : "8.8.1",
+            blockcanary    : "1.2.1",
+            leakcanary     : "1.6.1",
+            "fragmentation": "1.3.6"
+    ]
+
+    dependencies = [
+            //base
+            "appcompat-v4"                   : "com.android.support:support-v4:${dependVersion.support}",
+            "appcompat-v7"                   : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "cardview-v7"                    : "com.android.support:cardview-v7:${dependVersion.support}",
+            "recyclerview-v7"                : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "design"                         : "com.android.support:design:${dependVersion.support}",
+
+            //ui
+            "constraint-layout"              : "com.android.support.constraint:constraint-layout:1.0.2",
+            "material-calendarview"          : "com.prolificinteractive:material-calendarview:1.4.0",
+            "materialsearchview"             : "com.miguelcatalan:materialsearchview:1.4.0",
+            "multiline-collapsingtoolbar"    : "net.opacapp:multiline-collapsingtoolbar:1.3.1",
+            "PhotoView"                      : "com.github.chrisbanes:PhotoView:1.3.0",
+            "glide-transformations"          : "jp.wasabeef:glide-transformations:3.1.1",
+            "html-textview"                  : "org.sufficientlysecure:html-textview:3.1",
+            "ultimatebar"                    : "org.zackratos:ultimatebar:1.1.1",
+            "banner"                         : "com.youth.banner:banner:1.4.10",
+            "album"                          : "com.yanzhenjie:album:2.0.2",
+            "durban"                         : "com.yanzhenjie:durban:1.0.1",
+            "alertdialog"                    : "com.yanzhenjie.alertdialog:alertdialog:1.0.1",
+            "yanzhenjie-loading"             : "com.yanzhenjie:loading:1.0.2",
+            "photoview"                      : "com.bm.photoview:library:1.4.1",
+            "agentweb-agentweb"              : "com.just.agentweb:agentweb:${dependVersion.agentweb}",
+            "agentweb-download"              : "com.just.agentweb:download:${dependVersion.agentweb}",
+            "agentweb-filechooser"           : "com.just.agentweb:filechooser:${dependVersion.agentweb}",
+            "tkrefreshlayout"                : "com.lcodecorex:tkrefreshlayout:1.0.7",
+            "springview"                     : "com.liaoinstan.springview:library:${dependVersion.springview}",
+            "Android-PromptDialog"           : "com.github.limxing:Android-PromptDialog:1.1.3",
+            "FlycoTabLayout_Lib"             : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+            "progresspieview"                : "com.github.filippudak.progresspieview:library:1.0.4",
+            "universal-image-loader"         : "com.nostra13.universalimageloader:universal-image-loader:1.9.5",
+
+            //腾讯bugly
+            "bugly-nativecrashreport"        : "com.tencent.bugly:nativecrashreport:latest.release",
+            "bugly-crashreport_upgrade"      : "com.tencent.bugly:crashreport_upgrade:1.3.4",
+            "walle"                          : "com.meituan.android.walle:library:1.1.3",
+
+            //
+            "rxjava"                         : "io.reactivex.rxjava2:rxjava:2.1.6",
+            "rxandroid"                      : "io.reactivex.rxjava2:rxandroid:2.0.1",
+
+            //network
+            "gson"                           : "com.google.code.gson:gson:2.7",
+            "retrofit"                       : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "retrofit-converter-gson"        : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "retrofit-adapter-rxjava2"       : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
+            "retrofit-converter-scalars"     : "com.squareup.retrofit2:converter-scalars:${dependVersion.retrofit}",
+            "okhttp"                         : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
+            "okhttp-logging-interceptor"     : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+            "glide"                          : "com.github.bumptech.glide:glide:${dependVersion.glide}",
+            "glide-compiler"                 : "com.github.bumptech.glide:compiler:${dependVersion.glide}",
+            "glide-okhttp3-integration"      : "com.github.bumptech.glide:okhttp3-integration:${dependVersion.glide}",
+            "jsoup"                          : "org.jsoup:jsoup:1.10.1",
+            "gpuimage"                       : "jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1",
+            //di
+            "dagger"                         : "com.google.dagger:dagger:${dependVersion.dagger2}",
+            "dagger-compiler"                : "com.google.dagger:dagger-compiler:${dependVersion.dagger2}",
+            "butterknife"                    : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler"           : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            "annotation"                     : "org.glassfish:javax.annotation:10.0-b28",
+
+            //other
+            "multidex"                       : "com.android.support:multidex:1.0.1",
+            "logger"                         : "com.orhanobut:logger:1.15",
+            "fragmentation"                  : "me.yokeyword:fragmentation:${dependVersion.fragmentation}",
+            "fragmentation-swipeback"        : "me.yokeyword:fragmentation-swipeback:${dependVersion.fragmentation}",
+            "fragmentation-eventbus-activity": "me.yokeyword:eventbus-activity-scope:1.1.0",
+            "eventbus"                       : "org.greenrobot:eventbus:3.1.1",
+            "qiaoUtils"                      : "com.github.qiaoscong:Utils:v1.3.2",
+            //微信支付
+            "wechat"                         : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
+            //canary
+            "blockcanary-android"            : "com.github.moduth:blockcanary-android:${dependVersion.blockcanary}",
+            "blockcanary-no-op"              : "com.github.moduth:blockcanary-no-op:${dependVersion.blockcanary}",
+            "leakcanary-android"             : "com.squareup.leakcanary:leakcanary-android:${dependVersion.leakcanary}",
+            "leakcanary-android-no-op"       : "com.squareup.leakcanary:leakcanary-android-no-op:${dependVersion.leakcanary}",
+            "leakcanary-support-fragment"    : "com.squareup.leakcanary:leakcanary-support-fragment:${dependVersion.leakcanary}",
+    ]
+}
