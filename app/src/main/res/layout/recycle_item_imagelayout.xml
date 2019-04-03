@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_main_item"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_width="@dimen/_115dp"
+        android:layout_height="@dimen/_115dp"
+        android:scaleType="centerCrop"
+        />
+
+</LinearLayout>

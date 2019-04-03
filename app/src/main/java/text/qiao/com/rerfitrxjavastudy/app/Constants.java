@@ -25,6 +25,18 @@ public interface Constants {
      * 聚合数据 笑话大全
      */
     String APPKEY_XIAOHUA = "fd6916b82ed065a1c546acdd6c464926";
+    /**
+     * 聚合数据 微信精选
+     */
+    String APPKEY_WEIXIN = "c27690abc86fe023455b7dfb2beb62dd";
+    /**
+     * 聚合数据 违章
+     */
+    String APPKEY_WEIZHANG = "80c010e769bc99e3dc6809b1f40eda59";
+    /**
+     * 聚合数据 菜谱大全
+     */
+    String APPKEY_CAIPU = "5cdc9ab4bde7db1caf00f35e161c743f";
 
     /*--------------------------------------  path  -----------------------------------------------------*/
 

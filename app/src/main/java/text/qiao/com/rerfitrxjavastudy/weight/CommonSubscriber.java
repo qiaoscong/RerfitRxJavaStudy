@@ -11,8 +11,11 @@ import text.qiao.com.rerfitrxjavastudy.model.net.exception.ApiException;
 import text.qiao.com.utilslibrary.utils.log.LogUtil;
 
 /**
- * Created by codeest on 2017/2/23.
- */
+ *
+ * @author 乔少聪
+ * @time 2019/1/2 9:50
+ * @describe 网络请求
+*/
 
 public abstract class CommonSubscriber<T> extends ResourceSubscriber<T> {
     private BaseView mView;
@@ -44,6 +47,11 @@ public abstract class CommonSubscriber<T> extends ResourceSubscriber<T> {
 
     @Override
     public void onComplete() {
+
+    }
+
+    @Override
+    public void onNext(T t) {
 
     }
 

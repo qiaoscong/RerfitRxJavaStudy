@@ -16,6 +16,7 @@ import text.qiao.com.rerfitrxjavastudy.di.component.MyApplicationComponent;
 import text.qiao.com.rerfitrxjavastudy.di.module.ActivityModule;
 import text.qiao.com.rerfitrxjavastudy.di.module.HttpModule;
 import text.qiao.com.rerfitrxjavastudy.di.module.MyApplicationModule;
+import text.qiao.com.rerfitrxjavastudy.util.GlideCacheUtil;
 import text.qiao.com.utilslibrary.utils.ToastUtil;
 import text.qiao.com.utilslibrary.utils.log.LogUtil;
 
@@ -61,6 +62,8 @@ public class MyApplication extends Application {
         LogUtil.init(BuildConfig.LOG_DEBUG);
         //初始化吐司
         ToastUtil.init(instance);
+        //初始化 Glide
+        GlideCacheUtil.init(instance);
     }
 
     public void getScreenSize() {

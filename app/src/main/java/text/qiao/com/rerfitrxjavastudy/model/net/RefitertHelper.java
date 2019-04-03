@@ -3,8 +3,11 @@ package text.qiao.com.rerfitrxjavastudy.model.net;
 import javax.inject.Inject;
 
 import io.reactivex.Flowable;
+import text.qiao.com.rerfitrxjavastudy.model.entity.WeiXinJingXuan;
 import text.qiao.com.rerfitrxjavastudy.model.entity.XiaoHua;
 import text.qiao.com.rerfitrxjavastudy.model.entity.XinWen;
+import text.qiao.com.rerfitrxjavastudy.model.entity.caipu.CaiPuQuan;
+import text.qiao.com.rerfitrxjavastudy.model.entity.weizhang.WZCity;
 import text.qiao.com.rerfitrxjavastudy.model.net.api.JvHeApis;
 
 /**
@@ -32,4 +35,21 @@ public class RefitertHelper implements HttpHelper {
     public Flowable<XiaoHua> getXiaoHua(String appkey, String sort, int page, int pagesize, String time) {
         return mJvHeApis.getXiaoHua(appkey, sort, page, pagesize, time);
     }
+
+    @Override
+    public Flowable<WeiXinJingXuan> getWeiXin(String appkey, String pno, String ps, String dtype) {
+        return mJvHeApis.getWeiXin(appkey, pno, ps, dtype);
+    }
+
+    @Override
+    public Flowable<WZCity> getWZCity(String appkey, String province, String dtype, String format, String callback) {
+        return mJvHeApis.getWZCity(appkey, province, dtype, format, callback);
+    }
+
+    @Override
+    public Flowable<CaiPuQuan> getCaiPuQuan(String appkey, String parentid, String dtype) {
+        return mJvHeApis.getCaiPuQuan(appkey, parentid, dtype);
+    }
+
+
 }

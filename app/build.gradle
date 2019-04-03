@@ -27,6 +27,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -60,6 +61,7 @@ dependencies {
     compile rootProject.ext.dependencies["glide"]
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
     compile rootProject.ext.dependencies["glide-okhttp3-integration"]
+    implementation rootProject.ext.dependencies["glide-transformations"]
     //
     compile rootProject.ext.dependencies["fragmentation"]
     compile rootProject.ext.dependencies["fragmentation-swipeback"]
@@ -68,4 +70,12 @@ dependencies {
     compile rootProject.ext.dependencies["eventbus"]
     //other
     implementation rootProject.ext.dependencies["qiaoUtils"]
+
+    //ui
+    implementation rootProject.ext.dependencies["FlycoTabLayout_Lib"]
+    implementation rootProject.ext.dependencies["springview"]
+    compile rootProject.ext.dependencies["agentweb-agentweb"]
+    compile rootProject.ext.dependencies["agentweb-download"]
+    compile rootProject.ext.dependencies["agentweb-filechooser"]
+    compile rootProject.ext.dependencies["tkrefreshlayout"]
 }
